@@ -1,0 +1,2 @@
+- Unstage a file
+  - `git reset [path]`
