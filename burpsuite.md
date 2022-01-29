@@ -1,3 +1,5 @@
+The base request sender is in the Repeater tab.
+
 Set a cookie on a request:
 
 ```
