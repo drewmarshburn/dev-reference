@@ -19,5 +19,12 @@
 ## Credentials
 
 - See what credential store is being used: `git config --get credential.helper`
+
 - `store` means Github is just writing creds to `~/.git-credentials`
 - Thus, you can just delete `~/.git-credentials` to force git to prompt for your password.
+
+- `osxkeychain` means Github is using the Keychain Access application to store the creds
+-  Open Keychain Access on your mac (you can use spotlight)
+- Search for github.com
+- Select the github.com keychain item
+- Edit or delete your GitHub account credentials.
