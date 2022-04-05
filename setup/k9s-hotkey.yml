@@ -1,0 +1,41 @@
+hotKey:
+  shift-0:
+    shortCut: Shift-0
+    description: Pods
+    command: pods
+  shift-1:
+    shortCut: Shift-1
+    description: GitRepositories
+    command: gitrepositories  
+  shift-2:
+    shortCut: Shift-2
+    description: Kustomizations
+    command: kustomizations
+  shift-3:
+    shortCut: Shift-3
+    description: Helm Releases
+    command: helmreleases
+  shift-4:
+    shortCut: Shift-4
+    description: Secrets 
+    command: secrets
+  shift-5:
+    shortCut: Shift-5
+    description: ConfigMaps
+    command: configmaps
+  shift-6:
+    shortCut: Shift-6
+    description: Services
+    command: services
+  shift-7:
+    shortCut: Shift-7
+    description: Ingresses
+    command: ingresses
+  shift-8:
+    shortCut: Shift-8
+    description: Jobs
+    command: jobs
+  shift-9:
+    shortCut: Shift-9
+    description: Deployments
+    command: deployments
