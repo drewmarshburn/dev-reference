@@ -6,6 +6,10 @@ Force an ES reconciliation:
 kubectl annotate es NAME force-sync=$(date +%s) --overwrite
 ```
 
+## Job from CronJob
+
+`kubectl create job --from=cronjob/appcloud-logs-ism ism-test -n kube-system`
+
 ## Nginx Ingress
 
 ### 503 Not Found
