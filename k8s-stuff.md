@@ -19,7 +19,7 @@ If you've enabled basic auth on the `Ingress`, check the associated `Secret`. Th
 ## Mongo
 
 Mongo pod:
-`kubectl run --rm mongo --image=mongo:latest --image-pull-policy=Always -it --restart=Never`
+`kubectl run --rm mongo --image=mongo:latest --image-pull-policy=Always -it --restart=Never -- /bin/sh`
 
 Connect to mongo (assuming the service is named `mongodb.databases`):
 `mongo --host mongodb://mongodb.databases:27017/`
