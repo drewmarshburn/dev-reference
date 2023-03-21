@@ -12,6 +12,12 @@
   - `git fetch hyperledger`
   - `git checkout -b example hyperledger/main` 
 
+Git reset when submodules are around:
+```
+git reset --hard origin/whatever
+git submodule update --init --recursive
+```
+
 ## Rebasing
 
 - Rebase against upstream: `git rebase upstream/branch`
