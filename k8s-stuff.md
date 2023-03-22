@@ -6,6 +6,10 @@ Force an ES reconciliation:
 kubectl annotate es NAME force-sync=$(date +%s) --overwrite
 ```
 
+## Job from CronJob
+
+`kubectl create job --from=cronjob/appcloud-logs-ism ism-test -n kube-system`
+
 ## Nginx Ingress
 
 ### 503 Not Found
@@ -23,3 +27,10 @@ data:
   values: |
 {{ .Values | toPrettyJson | indent 4 }}
 ```
+## Mongo
+
+Mongo pod:
+`kubectl run --rm mongo --image=mongo:latest --image-pull-policy=Always -it --restart=Never -- /bin/sh`
+
+Connect to mongo (assuming the service is named `mongodb.databases`):
+`mongo --host mongodb://mongodb.databases:27017/`
